@@ -1,13 +1,13 @@
 buildscript {
-	ext {
-		springBootVersion = '2.2.0.RELEASE'
-	}
-	repositories {
-		mavenCentral()
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-	}
+    ext {
+        springBootVersion = '2.2.0.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
 }
 
 apply plugin: 'java'
@@ -24,8 +24,8 @@ repositories {
 }
 
 dependencies {
-	implementation ('org.springframework.boot:spring-boot-starter-web')
-	implementation ('org.springframework.boot:spring-boot-starter-data-mongodb')
-	testImplementation ('org.springframework.boot:spring-boot-starter-test')
-	implementation (group: 'de.bwaldvogel', name: 'mongo-java-server', version: '1.25.0')
+    implementation ('org.springframework.boot:spring-boot-starter-web')
+    implementation ('org.springframework.boot:spring-boot-starter-data-mongodb')
+    testImplementation ('org.springframework.boot:spring-boot-starter-test')
+    implementation (group: 'de.bwaldvogel', name: 'mongo-java-server', version: '1.25.0')
 }
